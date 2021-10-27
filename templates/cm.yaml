@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: blogconfig
+data:
+  TITLE: "{{ .Values.blog.title }} v3"
+  COLOR: {{ .Values.blog.color }}
+  BODY: {{ .Values.blog.body }}
